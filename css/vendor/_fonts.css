@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('../../fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
+        url('../../fonts/PlayfairDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('../../fonts/PlayfairDisplay-Bold.woff2') format('woff2'),
+        url('../../fonts/PlayfairDisplay-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('../../fonts/PlayfairDisplay-BlackItalic.woff2') format('woff2'),
+        url('../../fonts/PlayfairDisplay-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('../../fonts/PlayfairDisplay-BoldItalic.woff2') format('woff2'),
+        url('../../fonts/PlayfairDisplay-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('../../fonts/PlayfairDisplay-Black.woff2') format('woff2'),
+        url('../../fonts/PlayfairDisplay-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Playfair Display SC';
+    src: url('../../fonts/PlayfairDisplaySC-Regular.woff2') format('woff2'),
+        url('../../fonts/PlayfairDisplaySC-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

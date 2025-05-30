@@ -1,0 +1,133 @@
+header {
+    background-color: #f4cbc7;
+}
+
+.header-button:hover {
+    color: #ce4fa4;
+    transition: 0.3s ease;
+}
+
+.nav {
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-button {
+    border: 1px solid #000;
+    padding: 10px 24px;
+    border-radius: 20px;
+}
+
+.logo {
+    text-align: center;
+    font-size: 28px;
+    font-style: italic;
+    max-width: 100%;
+    height: auto;
+}
+
+.nav-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contacts {
+    text-align: right;
+    font-size: 14px;
+    line-height: 1.5;
+    gap: 30px;
+}
+
+.burger {
+    font-size: 40px;
+    color: #cc3e74;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #fae7f5;
+    transition: right 0.4s ease;
+    z-index: 2000;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-menu.active {
+    right: 0;
+}
+
+.mobile-menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.close-btn {
+    font-size: 80px;
+    color: #cc3e74;
+    cursor: pointer;
+}
+
+.mobile-menu-content {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    /* gap: 24px; */
+    border: none;
+}
+
+.mobile-menu-content a {
+    color: #000;
+    transition: 0.3s ease;
+    border: none;
+    max-width: max-content;
+}
+
+.mobile-menu-content a:hover {
+    color: #923272;
+}
+
+.mobile-menu.active .contacts,
+.mobile-menu.active .nav-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 817px) {
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav .contacts,
+    .nav .nav-buttons {
+        display: none;
+    }
+
+    .contacts a{
+        font-size: 20px;
+    }
+
+    .contacts{
+        margin-top: 30px;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .logo {
+        width: 200px;
+    }
+}

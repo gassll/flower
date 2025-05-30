@@ -1,0 +1,130 @@
+.top__sales h1 {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.top__sales {
+    background-color: #F4CBC7;
+}
+
+.contacts {
+    color: #000;
+    font-size: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 35px;
+    width: 370px;
+    height: 480px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.card__item img {
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+}
+
+.card__item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card__item p {
+    font-weight: 400;
+}
+
+.card-item__inner p {
+    margin-bottom: auto;
+    flex-grow: 1;
+}
+
+.card-item__inner {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 10px;
+}
+
+.card__item-button {
+    background-color: #B7B4B4;
+    border-radius: 30px;
+    font-weight: 400;
+    align-items: center;
+    align-self: flex-end;
+    margin-bottom: auto;
+    color: #000;
+    padding: 5px 55px;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    padding-bottom: 50px;
+}
+
+.banner-img video {
+    border-radius: 35px;
+    width: 100%;
+    height: auto;
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.button__banner {
+    background-color: #BE6B80;
+    padding: 10px 20px;
+    max-width: 446px;
+    border-radius: 20px;
+    font-family: 'Playfair Display SC', sans-serif;
+    color: white;
+    font-size: 40px;
+    font-weight: 400;
+    align-items: center;
+}
+
+.button__banner:hover {
+    background-color: #864958;
+    transition: 0.3s ease;
+}
+
+.video {
+    background-color: #ECD4D0;
+}
+
+.video video {
+    padding: 65px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1010px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}

@@ -1,0 +1,46 @@
+.footer {
+    background-color: #8a8379;
+    color: white;
+    padding: 40px 0;
+    font-weight: 400;
+}
+
+footer p,
+footer span,
+footer a {
+    font-size: 30px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-socials,
+.footer-info {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+.footer-info {
+    display: grid;
+    gap: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 10px 0;
+    align-items: center;
+}
+
+.footer-logo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

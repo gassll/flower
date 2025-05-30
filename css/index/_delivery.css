@@ -1,0 +1,51 @@
+.delivery {
+    background-color: #f4cbc7;
+    padding-top: 30px;
+}
+
+.delivery p {
+    font-weight: 400;
+}
+
+.delivery h2 {
+    font-weight: 400;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.social__link {
+    background-color: #be6b80;
+    border-radius: 50px;
+    width: 67px;
+    height: 67px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.social {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.social__inner {
+    display: flex;
+}
+
+.social__text {
+    margin-left: 15px;
+}
+
+.social__text p:first-child {
+    font-weight: 600;
+}

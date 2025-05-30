@@ -1,0 +1,13 @@
+@import 'basic/_reset.css';
+@import 'basic/_global.css';
+
+@import 'components/_header.css';
+@import 'components/_footer.css';
+
+@import 'vendor/_fonts.css';
+@import 'vendor/_vars.css';
+
+@import 'index/_content.css';
+@import 'index/_delivery.css';
+@import 'index/_reviews.css';
+@import 'index/_top-sales.css';
