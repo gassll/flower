@@ -39,6 +39,16 @@ header {
     font-size: 14px;
     line-height: 1.5;
     gap: 30px;
+    color: #000;
+    font-size: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .burger {
@@ -103,6 +113,40 @@ header {
     flex-direction: column;
 }
 
+@media (max-width: 1105px) {
+    .logo {
+        width: 370px;
+    }
+
+    .contacts {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 990px) {
+    .nav-buttons {
+        font-size: 18px;
+    }
+
+    .contacts {
+        font-size: 27px;
+    }
+
+    .logo {
+        width: 330px;
+    }
+}
+
+@media (max-width: 990px) {
+    .contacts{
+        font-size: 24px;
+    }
+
+    .nav-buttons {
+        font-size: 17px;
+    }
+}
+
 @media (max-width: 817px) {
     .nav {
         display: flex;
@@ -115,11 +159,11 @@ header {
         display: none;
     }
 
-    .contacts a{
+    .contacts a {
         font-size: 20px;
     }
 
-    .contacts{
+    .contacts {
         margin-top: 30px;
     }
 

@@ -44,3 +44,59 @@ footer a {
     justify-content: center;
     align-items: center;
 }
+
+@media (max-width: 1020px) {
+
+    footer p,
+    footer span,
+    footer a {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 1020px) {
+
+    footer p,
+    footer span,
+    footer a {
+        font-size: 21px;
+    }
+
+    .social-icons img:not(.footer__social-insta) {
+        width: 50px;
+        height: auto;
+    }
+
+    .footer__social-insta {
+        width: 40px;
+    }
+}
+
+@media (max-width: 720px) {
+
+    footer p,
+    footer span,
+    footer a {
+        font-size: 19px;
+    }
+
+    .br-mobile {
+        display: none;
+    }
+
+    .social-icons {
+        margin: 10px 0 0;
+    }
+}
+
+
+@media (max-width: 680px) {
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-logo {
+        margin: 20px;
+        width: 300px;
+    }
+}

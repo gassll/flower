@@ -4,15 +4,28 @@ const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
 let currentIndex = 0;
 
+// Функция отображения нужных карточек
 function showSlides() {
+    const isMobile = window.innerWidth <= 903;
+
     slides.forEach((slide, index) => {
         slide.classList.remove('active');
-        if (index === currentIndex || index === currentIndex + 1) {
-            slide.classList.add('active');
+
+        if (isMobile) {
+            // Показываем только одну карточку
+            if (index === currentIndex) {
+                slide.classList.add('active');
+            }
+        } else {
+            // Показываем две карточки
+            if (index === currentIndex || index === currentIndex + 1) {
+                slide.classList.add('active');
+            }
         }
     });
 }
 
+// Кнопка "Назад"
 prevBtn.addEventListener('click', () => {
     if (currentIndex > 0) {
         currentIndex--;
@@ -20,14 +33,31 @@ prevBtn.addEventListener('click', () => {
     }
 });
 
+// Кнопка "Вперёд"
 nextBtn.addEventListener('click', () => {
-    if (currentIndex < slides.length - 2) {
+    const isMobile = window.innerWidth <= 903;
+    const maxIndex = isMobile ? slides.length - 1 : slides.length - 2;
+
+    if (currentIndex < maxIndex) {
         currentIndex++;
         showSlides();
     }
 });
 
-// Изначально показываем первые 2
+// Обновление при изменении ширины экрана
+window.addEventListener('resize', () => {
+    // Сброс индекса, если он вышел за пределы после ресайза
+    const isMobile = window.innerWidth <= 903;
+    const maxIndex = isMobile ? slides.length - 1 : slides.length - 2;
+
+    if (currentIndex > maxIndex) {
+        currentIndex = maxIndex;
+    }
+
+    showSlides();
+});
+
+// Показываем первые карточки при загрузке
 showSlides();
 
 //бургер меню
@@ -45,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 
-//отзывы обратная связь
+    //отзывы обратная связь
 
     const feedbackForm = document.getElementById("feedbackForm");
     if (feedbackForm) {
