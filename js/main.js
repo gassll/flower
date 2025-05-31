@@ -124,3 +124,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     textElements.forEach(el => observer.observe(el));
 });
+
+window.addEventListener('load', () => {
+    document.querySelector('.content').style.backgroundImage = 'url("https://gassll.github.io/flower/images/index/fon.webp")';
+});
