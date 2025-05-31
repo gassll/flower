@@ -76,7 +76,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     //отзывы обратная связь
-
     const feedbackForm = document.getElementById("feedbackForm");
     if (feedbackForm) {
         feedbackForm.addEventListener("submit", function (event) {
@@ -86,8 +85,6 @@ document.addEventListener('DOMContentLoaded', function () {
             var name = document.getElementById("name").value;
             var email = document.getElementById("email").value;
             var message = document.getElementById("message").value;
-
-            // отправка данных на сервер
 
             alert("Сообщение отправлено!");
             this.reset();
