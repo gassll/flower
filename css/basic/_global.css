@@ -26,6 +26,13 @@ h1 {
     align-items: center;
 }
 
+section h1,
+article h1,
+nav h1,
+aside h1 {
+    font-size: 40px;
+}
+
 .container {
     max-width: 1440px;
     padding-left: 20px;
