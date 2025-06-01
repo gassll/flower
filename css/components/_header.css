@@ -16,7 +16,7 @@ header {
 
 .header-button {
     border: 1px solid #000;
-    padding: 10px 24px;
+    padding: 8px 15px;
     border-radius: 20px;
 }
 
@@ -26,6 +26,7 @@ header {
     font-style: italic;
     max-width: 100%;
     height: auto;
+    width: 300px;
 }
 
 .nav-buttons {
@@ -40,7 +41,7 @@ header {
     line-height: 1.5;
     gap: 30px;
     color: #000;
-    font-size: 32px;
+    font-size: 25px;
     display: flex;
     flex-direction: column;
 }
@@ -112,37 +113,13 @@ header {
     flex-direction: column;
 }
 
-@media (max-width: 1105px) {
-    .logo {
-        width: 370px;
-    }
-
-    .contacts {
-        font-size: 30px;
-    }
-}
-
 @media (max-width: 990px) {
-    .nav-buttons {
-        font-size: 18px;
-    }
-
-    .contacts {
-        font-size: 27px;
-    }
-
-    .logo {
-        width: 330px;
-    }
-}
-
-@media (max-width: 990px) {
-    .contacts{
-        font-size: 24px;
-    }
-
     .nav-buttons {
         font-size: 17px;
+    }
+
+    .logo {
+        width: 250px;
     }
 }
 
