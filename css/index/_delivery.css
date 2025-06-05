@@ -3,6 +3,10 @@
     padding-top: 30px;
 }
 
+.delivery__inner{
+    display: flex;
+}
+
 .delivery p {
     font-weight: 400;
 }
@@ -35,8 +39,8 @@
 .social__link {
     background-color: #be6b80;
     border-radius: 50px;
-    width: 67px;
-    height: 67px;
+    width: 40px;
+    height: 40px;
     justify-content: center;
     display: flex;
     align-items: center;

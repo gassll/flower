@@ -8,7 +8,7 @@
 footer p,
 footer span,
 footer a {
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .footer-container {
@@ -43,23 +43,14 @@ footer a {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 300px;
 }
 
 @media (max-width: 1020px) {
-
     footer p,
     footer span,
     footer a {
-        font-size: 26px;
-    }
-}
-
-@media (max-width: 1020px) {
-
-    footer p,
-    footer span,
-    footer a {
-        font-size: 21px;
+        font-size: 20px;
     }
 
     .social-icons img:not(.footer__social-insta) {
@@ -73,15 +64,10 @@ footer a {
 }
 
 @media (max-width: 720px) {
-
     footer p,
     footer span,
     footer a {
-        font-size: 19px;
-    }
-
-    .br-mobile {
-        display: none;
+        font-size: 18px;
     }
 
     .social-icons {

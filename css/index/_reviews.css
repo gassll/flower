@@ -50,6 +50,14 @@
     margin-bottom: 20px;
 }
 
+.swiper__content-title {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    font-weight: 600;
+}
+
+
 .swiper-title {
     margin-top: 60px;
 }
@@ -235,7 +243,7 @@ button:hover {
         font-size: 15px;
     }
 
-    .swiper__content-title {
+    .swiper__content-title  {
         width: 30px;
     }
 

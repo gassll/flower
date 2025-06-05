@@ -28,11 +28,13 @@
         <div class="contacts">
           <div class="contacts-item">
             <img src="images/components/phone.svg" alt="phone" width="20" height="20">
-            <a href="tel:+7 918-347-18-55">+7 918-347-18-55</a>
+            <a href="tel:+7 918-152-95-25">+7 918-152-95-25</a>
           </div>
           <div class="contacts-item">
-            <img src="images/components/phone.svg" alt="phone" width="20" height="20">
-            <a href="tel:+7 918-152-95-25">+7 918-152-95-25</a>
+            <a href="https://wa.me/79181529525" target="_blank" class="contacts-item">
+              <img src="images/components/whatsapp-header.svg" alt="WhatsApp" width="30" height="30" loading="lazy">
+              WhatsApp
+            </a>
           </div>
         </div>
         <div class="burger" id="burger">&#9776;</div>
@@ -66,15 +68,8 @@
   <div class="content-container">
     <div class="content">
       <div class="text-block" id="mainText">
-        <p class="text-block-one">Мы — профессиональный цветочный магазин с 15-летним опытом на рынке. Добро
-          пожаловать в цветочный
-          магазин Цветы 24 в Белореченске. За это время нам доверили тысячи букетов для самых разных поводов: от
-          искренних «спасибо» до важных свадебных церемоний.</p>
-        <p class="text-block-two">Работаем только с проверенными поставщиками, собираем букеты вручную, учитывая
-          пожелания каждого клиента. У
-          нас — свежие цветы, быстрая доставка, понятные цены и стабильное качество.</p>
-        <p class="text-block-three">Нам доверяют, потому что мы умеем говорить на языке цветов — просто, красиво и в
-          срок.</p>
+        <p class="text-block-one">Профессиональный цветочный магазин с 15-летним стажем</p>
+        <button class="content-button" id="content-button">Посмотреть товары</button>
       </div>
     </div>
   </div>
@@ -83,46 +78,98 @@
     <div class="container">
       <h1>топ продаж</h1>
       <div class="cards">
+
         <div class="card__item">
           <img src="images/index/white-roses.webp" alt="Белые розы" width="370" height="289" loading="lazy">
           <div class="card-item__inner">
-            <p>Букет из белых роз</p>
-            <span class="card__item-button">3500 Р</span>
+            <p>Белые розы</p>
+
+            <div class="card__footer">
+              <button class="btn" id="openModal">подробнее</button>
+              <span class="card__item-button">3500 Р</span>
+            </div>
+
+            <div id="myModal" class="modal">
+              <div class="modal-content">
+                <span class="close" id="closeModal">&times;</span>
+                <div class="card__inner-composition">
+                  <p class="card__inner-composition-title">Состав</p>
+                  <p>Роза - 31 шт.</p>
+                  <p>Бант атласный - 1 шт.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+
+
         <div class="card__item">
           <img src="images/index/red-roses.webp" alt="Красные розы" width="370" height="289" loading="lazy">
           <div class="card-item__inner">
             <p>Букет из красных роз</p>
+            <div class="card__inner-composition">
+              <p class="card__inner-composition-title">Состав</p>
+              <p>Роза - 7 шт.</p>
+              <p>Упаковка дизайнерская - 1 шт.</p>
+            </div>
             <span class="card__item-button">3500 Р</span>
           </div>
         </div>
+
         <div class="card__item">
           <img src="images/index/pink-roses.webp" alt="Розовые розы" width="370" height="289" loading="lazy">
           <div class="card-item__inner">
             <p>Букет из роз и лилий</p>
+            <div class="card__inner-composition">
+              <p class="card__inner-composition-title">Состав</p>
+              <p>Альстромерии - 9 шт.</p>
+              <p>Роза - 5 шт.</p>
+              <p>Декоративная листва - 7 шт.</p>
+              <p>Корзина плетенная - 1 шт.</p>
+            </div>
             <span class="card__item-button">3500 Р</span>
           </div>
         </div>
+
         <div class="card__item">
           <img src="images/index/bush-roses.webp" alt="Кустовые красные розы" width="370" height="289" loading="lazy">
           <div class="card-item__inner">
             <p>Букет из красных кустовых роз</p>
+            <div class="card__inner-composition">
+              <p class="card__inner-composition-title">Состав</p>
+              <p>Эвкалипт - 1 шт.</p>
+              <p>Кустовая роза - 17 шт.</p>
+              <p>Упаковка дизайнерская - 2 шт.</p>
+            </div>
             <span class="card__item-button">3500 Р</span>
           </div>
         </div>
+
         <div class="card__item">
           <img src="images/index/lilies.webp" alt="Лилии" width="370" height="289" loading="lazy">
           <div class="card-item__inner">
-            <p>Букет из кремово-жёлтых лилий</p>
+            <p>Кремово-жёлтые лилии</p>
+            <div class="card__inner-composition">
+              <p class="card__inner-composition-title">Состав</p>
+              <p>Эвкалипт - 1 шт.</p>
+              <p>Лилия - 5 шт.</p>
+              <p>Упаковка дизайнерская - 1 шт.</p>
+            </div>
             <span class="card__item-button">3500 Р</span>
           </div>
         </div>
+
         <div class="card__item">
           <img src="images/index/chrysanthemums.webp" alt="Красные розы и хризантемы" width="365" height="289"
             loading="lazy">
           <div class="card-item__inner">
             <p>Букет из красных роз и хризантем</p>
+            <div class="card__inner-composition">
+              <p class="card__inner-composition-title">Состав</p>
+              <p>Эвкалипт - 1 шт.</p>
+              <p>Роза - 7 шт.</p>
+              <p>Упаковка дизайнерская - 1 шт.</p>
+            </div>
             <span class="card__item-button">3500 Р</span>
           </div>
         </div>
@@ -152,52 +199,39 @@
   <section id="delivery">
     <div class="delivery">
       <div class="container">
-        <h1>доставка</h1>
-        <p>Доставка цветов по городу осуществляется - круглосуточно. </p>
-        <p>Стоимость доставки - от 250 рублей. </p>
-        <p>После оплаты заказа, флористы немедленно приступают к сборке букета. </p>
-        <p>Срок доставки - в течение двух часов с момента оплаты или в другое указанное Вами время. </p>
-        <h2>Оплата и цены</h2>
-        <p>Возможные способы оплаты:</p>
-        <p>Наличный расчет для физических лиц (через магазин или партнеров).</p>
-        <p>Оплата банковской картой.</p>
-        <div class="map-wrapper">
-          <iframe
-            src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa278c2f26e540552ce5cc4a3a7824bfe3587db2ec66d0f330eb803738957cd2e&amp;source=constructor"
-            width="1180" height="700" frameborder="0" title="map-widget"></iframe>
-        </div>
+        <div class="delivery__inner">
+          <div class="delivery__left">
+            <h1>доставка</h1>
+            <p>Доставка цветов по городу осуществляется - круглосуточно. </p>
+            <p>Стоимость доставки - от 250 рублей. </p>
+            <p>После оплаты заказа, флористы немедленно приступают к сборке букета. </p>
+            <p>Срок доставки - в течение двух часов с момента оплаты или в другое указанное Вами время. </p>
+            <h2>Оплата и цены</h2>
+            <p>Возможные способы оплаты:</p>
+            <p>Наличный расчет для физических лиц (через магазин или партнеров).</p>
+            <p>Оплата банковской картой.</p>
+          </div>
 
-        <div class="social">
-          <div class="social__inner">
-            <div class="social__link">
-              <img src="images/index/location-white.svg" alt="Локация" width="21" height="30" loading="lazy">
+          <div class="delivery__right">
+            <div class="map-wrapper">
+              <iframe
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa278c2f26e540552ce5cc4a3a7824bfe3587db2ec66d0f330eb803738957cd2e&amp;source=constructor"
+                width="1180" height="700" frameborder="0" title="map-widget"></iframe>
             </div>
-            <div class="social__text">
-              <p>Цветы 24 часа</p>
-              <p>г. Белореченск, ул. Луначарского, 183</p>
-              <p>Режим работы - круглосуточно</p>
+
+            <div class="social">
+              <div class="social__inner">
+                <div class="social__link">
+                  <img src="images/index/location-white.svg" alt="Локация" width="20" height="20" loading="lazy">
+                </div>
+                <div class="social__text">
+                  <p>Цветы 24 часа</p>
+                  <p>г. Белореченск, ул. Луначарского, 183</p>
+                  <p>Режим работы - круглосуточно</p>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="social__inner">
-            <div class="social__link">
-              <img src="images/index/insta-white.svg" class="social__link-insta" alt="Соцсети" width="40" height="40"
-                loading="lazy">
-            </div>
-            <div class="social__text">
-              <p>Соцсети</p>
-              <p><a href="https://www.instagram.com/cveti24/">Instagram</a></p>
-              <p><a href="https://wa.me/79181529525" target="_blank">WhatsApp</a></p>
-            </div>
-          </div>
-          <div class="social__inner">
-            <div class="social__link">
-              <img src="images/index/phone-white.svg" alt="Телефон" width="27" height="27" loading="lazy">
-            </div>
-            <div class="social__text">
-              <p>Телефон</p>
-              <p><a href="tel:+7 918-347-18-55">+7918-347-18-55</a></p>
-              <p><a href="tel:+7 7918-152-95-25">+7918-152-95-25</a></p>
-            </div>
+            
           </div>
         </div>
       </div>
@@ -213,6 +247,7 @@
         <div class="swiper-slide">
           <div class="swiper__content">
             <p class="swiper__content-title"><img src="images/index/кавычки.svg" alt="кавычки" width="40" height="33">
+              Ирина
             </p>
             <p class="swiper__content-text">
               Заказывала букет маме на день рождения — привезли вовремя, цветы свежайшие, оформление просто вау!
@@ -225,6 +260,7 @@
         <div class="swiper-slide">
           <div class="swiper__content">
             <p class="swiper__content-title"><img src="images/index/кавычки.svg" alt="кавычки" width="40" height="33">
+              Ростислав
             </p>
             <p class="swiper__content-text">
               Уже не первый раз заказываю здесь цветы — всегда всё на высшем уровне. Приятно, что можно доверять и
@@ -236,6 +272,7 @@
         <div class="swiper-slide">
           <div class="swiper__content">
             <p class="swiper__content-title"><img src="images/index/кавычки.svg" alt="кавычки" width="40" height="33">
+              Дмитрий
             </p>
             <p class="swiper__content-text">
               Хотел порадовать любимую — благодаря вам это получилось идеально. Она была в восторге от букета!
@@ -245,6 +282,7 @@
         <div class="swiper-slide">
           <div class="swiper__content">
             <p class="swiper__content-title"><img src="images/index/кавычки.svg" alt="кавычки" width="40" height="33">
+              Глеб
             </p>
             <p class="swiper__content-text">
               Очень люблю именно этот цветочный магазин. Всегда вежливое и доброжелательное обслуживание, большой
@@ -255,6 +293,7 @@
         <div class="swiper-slide">
           <div class="swiper__content">
             <p class="swiper__content-title"><img src="images/index/кавычки.svg" alt="кавычки" width="40" height="33">
+              Григорий
             </p>
             <p class="swiper__content-text">
               Спасибо вам большое! Теперь, я ваш постоянный клиент. Все цветы высокого качества, букеты оригинальные
@@ -295,19 +334,18 @@
         <p>Соцсети</p>
         <div class="social-icons">
           <a href="https://www.instagram.com/cveti24/">
-            <img src="images/components/instagram.svg" class="footer__social-insta" alt="Instagram" width="55"
-              height="55" loading="lazy">
+            <img src="images/components/instagram.svg" class="footer__social-insta" alt="Instagram" width="40"
+              height="40" loading="lazy">
           </a>
           <a href="https://wa.me/79181529525" target="_blank">
-            <img src="images/components/whatsapp.svg" alt="WhatsApp" width="66" height="66" loading="lazy">
+            <img src="images/components/whatsapp.svg" alt="WhatsApp" width="50" height="50" loading="lazy">
           </a>
         </div>
-        <p><a href="tel:+7 918-152-95-25">+7 918 347 18 55</a></p>
-        <span class="br-mobile"><br></span>
-        <p><a href="tel:+7 918-152-95-25">+7 918-152-95-25</a></p>
+        <p><a href="tel:+7 918-152-95-25">+7 (918)-152-95-25</a></p>
+        <p><a href="tel:+7 918-347-18-55">+7 (918)-347-18-55</a></p>
       </div>
       <div class="footer-logo">
-        <img src="images/components/лого-чб.svg" alt="Цветы 24" width="365" height="193" loading="lazy">
+        <img src="images/components/лого-чб.svg" alt="Цветы 24" width="300" height="159" loading="lazy">
       </div>
       <div class="footer-info">
         <p>г.Белореченск, ул.<br>Луначарского, 183</p>
