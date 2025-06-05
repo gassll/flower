@@ -69,14 +69,16 @@
     <div class="content">
       <div class="text-block" id="mainText">
         <p class="text-block-one">Профессиональный цветочный магазин с 15-летним стажем</p>
-        <button class="content-button" id="content-button">Посмотреть товары</button>
+        <button class="content-button" id="content-button">
+          <a href="#catalog" class="content-button">Посмотреть товары</a>
+        </button>
       </div>
     </div>
   </div>
 
-  <section class="top__sales">
+  <section id="catalog" class="catalog">
     <div class="container">
-      <h1>топ продаж</h1>
+      <h1>каталог товаров</h1>
       <div class="cards">
 
         <div class="card__item">
@@ -196,42 +198,40 @@
     </div>
   </div>
 
-  <section id="delivery">
-    <div class="delivery">
-      <div class="container">
-        <div class="delivery__inner">
-          <div class="delivery__left">
-            <h1>доставка</h1>
-            <p>Доставка цветов по городу осуществляется - круглосуточно. </p>
-            <p>Стоимость доставки - от 250 рублей. </p>
-            <p>После оплаты заказа, флористы немедленно приступают к сборке букета. </p>
-            <p>Срок доставки - в течение двух часов с момента оплаты или в другое указанное Вами время. </p>
-            <h2>Оплата и цены</h2>
-            <p>Возможные способы оплаты:</p>
+  <section id="delivery" class="delivery">
+    <div class="container">
+      <div class="delivery__inner">
+        <div class="delivery__left">
+          <div class="delivery__left-top">
+            <h1 class="delivery__title">доставка</h1>
+            <p>Доставка цветов по городу осуществляется - <b>круглосуточно.</b> </p>
+            <p><b>Стоимость доставки</b> - от 250 рублей. </p>
+            <p><b>Срок доставки</b> - в течение двух часов с момента оплаты или в другое указанное Вами время. </p>
+          </div>
+          <div class="delivery__left-bottom">
+            <h1 class="delivery__title">оплата</h1>
+            <p><b>Возможные способы оплаты:</b></p>
             <p>Наличный расчет для физических лиц (через магазин или партнеров).</p>
             <p>Оплата банковской картой.</p>
           </div>
-
-          <div class="delivery__right">
-            <div class="map-wrapper">
-              <iframe
-                src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa278c2f26e540552ce5cc4a3a7824bfe3587db2ec66d0f330eb803738957cd2e&amp;source=constructor"
-                width="1180" height="700" frameborder="0" title="map-widget"></iframe>
-            </div>
-
-            <div class="social">
-              <div class="social__inner">
-                <div class="social__link">
-                  <img src="images/index/location-white.svg" alt="Локация" width="20" height="20" loading="lazy">
-                </div>
-                <div class="social__text">
-                  <p>Цветы 24 часа</p>
-                  <p>г. Белореченск, ул. Луначарского, 183</p>
-                  <p>Режим работы - круглосуточно</p>
-                </div>
+        </div>
+        <div class="delivery__right">
+          <div class="map-wrapper">
+            <iframe
+              src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa278c2f26e540552ce5cc4a3a7824bfe3587db2ec66d0f330eb803738957cd2e&amp;source=constructor"
+              frameborder="0" title="map-widget"></iframe>
+          </div>
+          <div class="social">
+            <div class="social__inner">
+              <div class="social__link">
+                <img src="images/index/location-white.svg" alt="Локация" width="20" height="20" loading="lazy">
+              </div>
+              <div class="social__text">
+                <p>Цветы 24 часа</p>
+                <p>г. Белореченск, ул. Луначарского, 183</p>
+                <p>Режим работы - круглосуточно</p>
               </div>
             </div>
-            
           </div>
         </div>
       </div>

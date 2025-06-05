@@ -1,10 +1,10 @@
-.top__sales h1 {
+.catalog h1 {
     display: flex;
     justify-content: center;
     padding: 40px 0;
 }
 
-.top__sales {
+.catalog {
     background-color: #F4CBC7;
 }
 

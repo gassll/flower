@@ -90,10 +90,26 @@
     .text-block {
         font-size: 30px;
     }
+
+    .content-button {
+        font-size: 15px;
+    }
+
+    .catalog h1 {
+        font-size: 35px;
+    }
 }
 
 @media (max-width:465px) {
     .text-block {
         font-size: 25px;
+    }
+
+    .content-button {
+        font-size: 13px;
+    }
+
+    .catalog h1 {
+        font-size: 30px;
     }
 }

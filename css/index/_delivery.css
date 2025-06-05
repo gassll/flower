@@ -1,22 +1,35 @@
 .delivery {
     background-color: #f4cbc7;
-    padding-top: 30px;
+    padding: 50px 0px;
 }
 
-.delivery__inner{
+.delivery__inner {
     display: flex;
+    gap: 10px;
+}
+
+.delivery__right {
+    width: 1000px;
+}
+
+.delivery__left {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .delivery p {
     font-weight: 400;
+    line-height: 1.5;
 }
 
-.delivery h2 {
+.delivery__title {
     font-weight: 400;
-    font-size: 32px;
+    font-size: 40px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    margin-bottom: 5px;
 }
 
 .map-wrapper {
@@ -34,6 +47,7 @@
     left: 0;
     width: 100%;
     height: 100%;
+    border-radius: 20px;
 }
 
 .social__link {
@@ -44,13 +58,6 @@
     justify-content: center;
     display: flex;
     align-items: center;
-}
-
-.social {
-    display: flex;
-    gap: 100px;
-    justify-content: center;
-    padding-bottom: 50px;
 }
 
 .social__inner {
@@ -72,6 +79,15 @@
 
     .social {
         gap: 70px;
+    }
+
+    .delivery__title {
+        font-weight: 400;
+        font-size: 35px;
+    }
+
+    .delivery p {
+        font-size: 18px;
     }
 }
 
@@ -99,24 +115,34 @@
     }
 
     .social__link {
-        width: 55px;
-        height: 55px;
-    }
-
-    .social__link img:not(.social__link-insta) {
-        width: 23px;
-        height: 23px;
-    }
-
-    .social__link-insta {
-        width: 30px;
-        height: 30px;
+        width: 35px;
+        height: 35px;
     }
 }
 
 @media (max-width: 818px) {
     .delivery p {
         font-size: 16px;
+    }
+
+    .delivery__inner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .map-wrapper {
+        padding-top: 0;
+        height: 400px;
+    }
+
+    .map-wrapper iframe {
+        position: static;
+        width: 100%;
+        height: 100%;
+    }
+
+    .delivery__right {
+        width: auto;
     }
 }
 
@@ -128,11 +154,9 @@
     .delivery h2 {
         font-size: 25px;
     }
-}
 
-@media (max-width: 580px) {
-    .delivery p {
-        font-size: 15px;
+    .map-wrapper {
+        height: 300px;
     }
 }
 
@@ -144,9 +168,10 @@
     .delivery p {
         font-size: 14px;
     }
+}
 
-    .social__link {
-        width: 40px;
-        height: 40px;
+@media (max-width: 515px) {
+    .map-wrapper {
+        height: 250px;
     }
 }
