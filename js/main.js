@@ -125,22 +125,71 @@ document.addEventListener("DOMContentLoaded", function () {
     textElements.forEach(el => observer.observe(el));
 });
 
+//top sales показать еще
+const showMoreButton = document.getElementById('showMore');
+showMoreButton.addEventListener('click', () => {
+    // Сколько товаров показывать за клик:
+    const itemsToShow = 6;
+    const hiddenItems = document.querySelectorAll('#catalog .hidden');
 
+    for (let i = 0; i < itemsToShow && i < hiddenItems.length; i++) {
+        hiddenItems[i].classList.remove('hidden');
+    }
 
-// const modal = document.getElementById("myModal");
-// const btn = document.getElementById("openModal");
-// const span = document.getElementById("closeModal");
+    // Если больше нет скрытых товаров — скрываем кнопку
+    if (document.querySelectorAll('#catalog .hidden').length === 0) {
+        showMoreButton.style.display = 'none';
+    }
+});
 
-// btn.onclick = function () {
-//     modal.style.display = "block";
-// }
+//букеты модальное окно
+document.addEventListener('DOMContentLoaded', function () {
+    const modal = document.getElementById('modal');
+    const modalImg = document.getElementById('modalImg');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalDescription = document.getElementById('modalDescription');
+    const modalClose = document.querySelector('.modal__close');
 
-// span.onclick = function () {
-//     modal.style.display = "none";
-// }
+    // Здесь можно задать описание для каждого букета (можно расширять)
+    const descriptions = {
+        'Белые розы': 'Состав: белые розы 31 шт.<br>Оформление: без упаковочной бумаги, перевязан атласной лентой.',
+        'Букет из роз': 'Состав: красные розы, кустовые розовые розы, светло-розовые розы, альстромерии белые, гиперикум.<br>Оформление: упаковочная бумага.',
+        'Букет из роз и лилий': 'Состав: розы, альстромерии, декоративная зелень.<br>Оформление: плетёная корзинка.',
+        'Букет из красных кустовых роз': 'Состав: 19 алых роз, декоративная зелень.<br>Оформление: подарочная упаковка, атласный бант.',
+        'Кремово-жёлтые лилии': 'Состав: кремовые лилии, декоративная зелень.<br>Оформление: без упаковки.',
+        'Букет из красных роз и хризантем': 'Состав: красные розы, хризантемы, зелень.<br>Оформление: подарочная упаковка.',
+        'Букет из пионовидных роз': 'Состав: пионовидные розы - 31 шт.<br>Оформление: подарочная упаковка.',
+        'Букет из роз и альстромерии': 'Состав: французская роза, кустовая роза, альстромерия, зелень. <br>Оформление: подарочная упаковка.',
+        'Букет из кремовых роз': 'Состав: кремовая роза, кремовая кустовая роза, альстромерия и экзотика. <br>Оформление: подарочная упаковка.',
+        'Букет "Симфония цвета" ': 'Состав:  роза Кантри Блюз, роза кустовая, гвоздика сорт, эвкалипт, рускус. <br>Оформление: подарочная упаковка.',
+        'Монобукет синие Гиацинты': 'Состав:  Гиацинты - 25 шт. <br>Оформление: подарочная упаковка.',
+        'Букет "Пленительные Моменты" ': 'Состав:  Гвоздики, Гиперикум, Роза. <br>Оформление: подарочная упаковка.'
+    };
 
-// window.onclick = function (event) {
-//     if (event.target === modal) {
-//         modal.style.display = "none";
-//     }
-// }
+    // Навешиваем клик на все "Подробнее"
+    document.querySelectorAll('.card__item-bottom').forEach(btn => {
+        btn.addEventListener('click', function () {
+            const card = this.closest('.card__item');
+            const imgSrc = card.querySelector('img').src;
+            const title = card.querySelector('.card__item-title').dataset.title;
+
+            modalImg.src = imgSrc;
+            modalTitle.innerText = title;
+            modalDescription.innerHTML = descriptions[title] || 'Описание отсутствует.';
+
+            modal.style.display = 'flex';
+        });
+    });
+
+    // Закрытие модалки
+    modalClose.addEventListener('click', () => {
+        modal.style.display = 'none';
+    });
+
+    // Закрытие по клику вне контента
+    window.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+});

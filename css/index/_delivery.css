@@ -5,7 +5,7 @@
 
 .delivery__inner {
     display: flex;
-    gap: 10px;
+    gap: 30px;
 }
 
 .delivery__right {
@@ -14,8 +14,10 @@
 
 .delivery__left {
     display: flex;
+    text-align: justify;
     flex-direction: column;
     gap: 30px;
+    line-height: 1.7;
 }
 
 .delivery p {

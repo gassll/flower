@@ -48,6 +48,7 @@
 
 .swiper__content-text {
     margin-bottom: 20px;
+    text-align: justify;
 }
 
 .swiper__content-title {
@@ -243,7 +244,7 @@ button:hover {
         font-size: 15px;
     }
 
-    .swiper__content-title  {
+    .swiper__content-title {
         width: 30px;
     }
 

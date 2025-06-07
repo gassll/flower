@@ -46,6 +46,11 @@
     padding: 5px 10px;
 }
 
+.content-button:hover {
+    background-color: #864958;
+    transition: 0.3s ease;
+}
+
 .text-block {
     max-width: 760px;
     z-index: 1;
