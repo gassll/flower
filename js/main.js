@@ -125,6 +125,7 @@ document.addEventListener("DOMContentLoaded", function () {
     textElements.forEach(el => observer.observe(el));
 });
 
+
 //top sales показать еще
 const showMoreButton = document.getElementById('showMore');
 showMoreButton.addEventListener('click', () => {
