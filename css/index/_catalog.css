@@ -221,12 +221,16 @@
     .button__banner {
         font-size: 36px;
     }
+
+    .card__item-title {
+        font-size: 22px;
+    }
 }
 
 @media (max-width: 999px) {
     .card__item {
         width: 250px;
-        height: 330px;
+        height: 305px;
     }
 
     .card__item img {
@@ -242,8 +246,12 @@
         font-size: 18px;
     }
 
-    .card__item-description {
-        font-size: 14px;
+    .card__item-bottom span {
+        font-size: 18px;
+    }
+
+    .card__item-title {
+        font-size: 20px;
     }
 }
 
@@ -256,7 +264,7 @@
 @media (max-width: 850px) {
     .card__item {
         width: 220px;
-        height: 300px;
+        height: 285px;
     }
 
     .card__item img {
@@ -269,15 +277,15 @@
     }
 
     .card__item-title {
-        font-size: 19px;
-    }
-
-    .card__item-description {
-        font-size: 13px;
+        font-size: 18px;
     }
 
     .button__banner {
         font-size: 30px;
+    }
+
+    .card__item-bottom span {
+        font-size: 16px;
     }
 
 }
@@ -289,7 +297,7 @@
 
     .card__item {
         width: 180px;
-        height: 295px;
+        height: 265px;
     }
 
     .card__item-button {
@@ -308,8 +316,16 @@
         font-size: 15px;
     }
 
-    .card__item-description {
-        font-size: 11px;
+    .card__item-bottom span {
+        font-size: 13px;
+    }
+
+    .card__item-bottom p {
+        font-size: 18px;
+    }
+
+    .modal__content {
+        max-width: 375px;
     }
 }
 
@@ -341,9 +357,7 @@
     .button__banner {
         font-size: 16px;
     }
-}
 
-@media (max-width: 451px) {
     h1 {
         font-size: 35px;
     }
@@ -354,7 +368,10 @@
 
     .card__item {
         width: 180px;
-        height: 275px;
+    }
+
+    .modal__content{
+        font-size: 18px;
     }
 }
 
@@ -365,7 +382,6 @@
 
     .card__item {
         width: 220px;
-        height: 315px;
     }
 
     .card__item-button {
